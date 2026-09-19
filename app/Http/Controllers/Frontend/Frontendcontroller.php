@@ -51,11 +51,5 @@ class Frontendcontroller extends Controller
 
 
     // Entidade Users
-    public function users(Request $request){
-        return view('pages.users.index');
-    }
    
-    public function createUsers (Request $request){
-        return view('pages.users.create');
-    }
 }

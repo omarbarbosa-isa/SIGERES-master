@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Frontend\Frontendcontroller;
+use App\Http\Controllers\Frontend\UserControler;
 
 //landing page
 Route::get('/', [Frontendcontroller::class, 'index'])->name('landing.page');
@@ -25,5 +26,5 @@ Route::get('/reservas', [Frontendcontroller::class, 'reservas'])->name('reservas
 Route::get('/reservas/create', [Frontendcontroller::class, 'createReservas'])->name('reservas.create');
 
 // Rotas da entidade Users
-Route::get('/users', [Frontendcontroller::class, 'users'])->name('users.index');
-Route::get('/users/create', [Frontendcontroller::class, 'createUsers'])->name('users.create');
+Route::get('/users', [UserControler::class, 'index'])->name('users.index');
+Route::get('/users/create', [UserControler::class, 'create'])->name('users.create');
