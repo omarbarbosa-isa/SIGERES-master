@@ -20,34 +20,36 @@
                     <div class="card-body">
                       <div class="row g-3">
                         <div class="col-md-6">
-                          <label for="validationCustom01" class="form-label">Name</label>
+                          <label for="validationCustom01" class="form-label">Nome</label>
                           <input
                             type="text"
                             class="form-control"
+                            placeholder="Omar"
                             id="validationCustom01"
-                            value="Omar"
+                        
                             required
                           />
                           <div class="valid-feedback">Looks good!</div>
                </div>
                         <div class="col-md-6">
-                          <label for="validationCustom02" class="form-label">Surname</label>
+                          <label for="validationCustom02" class="form-label">Sobrenome</label>
                           <input
                             type="text"
                             class="form-control"
+                            placeholder="Barbosa"
                             id="validationCustom02"
-                            value="Barbosa"
                             required
                           />
                           <div class="valid-feedback">Looks good!</div>
                         </div>
                         <div class="col-md-6">
-                          <label for="validationCustomUsername" class="form-label">Username</label>
+                          <label for="validationCustomUsername" class="form-label">Nome de usuário</label>
                           <div class="input-group has-validation">
                             <span class="input-group-text" id="inputGroupPrepend">@</span>
                             <input
                               type="text"
                               class="form-control"
+                              placeholder="Obarbosa"
                               id="validationCustomUsername"
                               aria-describedby="inputGroupPrepend"
                               required
@@ -56,7 +58,7 @@
                           </div>
                         </div>
                         <div class="col-md-6">
-                          <label for="validationCustom03" class="form-label">birth_date</label>
+                          <label for="validationCustom03" class="form-label">Data de nascimento</label>
                           <input
                             type="date"
                             class="form-control"
@@ -66,61 +68,68 @@
                           <div class="invalid-feedback">Please provide a valid birth date.</div>
                         </div>
                         <div class="col-md-6">
-                          <label for="validationCustom01" class="form-label">category</label>
+                          <label for="validationCustom01" class="form-label">Categoria</label>
                           <input
                             type="text"
                             class="form-control"
                             id="validationCustom01"
-                            value="Category"
+                            placeholder="Administrador"
                             required
                           />
                           <div class="valid-feedback">Looks good!</div>
                         </div>
                         <div class="col-md-6">
-                          <label for="validationCustom02" class="form-label">role</label>
+                          <label for="validationCustom02" class="form-label">Função</label>
                           <input
                             type="text"
                             class="form-control"
                             id="validationCustom02"
-                            value="Role"
+                            placeholder="Cozinheiro"
                             required
                           />
                           <div class="valid-feedback">Looks good!</div>
                         </div>
                         <div class="col-md-6">
-                          <label for="validationCustom01" class="form-label">gender</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="validationCustom01"
-                            value="Male"
-                            required
-                          />
+                            <label for="validationCustom04" class="form-label">Gênero</label>
+                          <select class="form-select" id="validationCustom04" required>
+                            <option selected disabled value="">Escolher&hellip;</option>
+                            <option>Feminino</option>
+                            <option>Masculino</option>
+                          </select>
+
                           <div class="valid-feedback">Looks good!</div>
                         </div>
                         <div class="col-md-6">
-                          <label for="validationCustom02" class="form-label">contact</label>
+                          <label for="validationCustom02" class="form-label">Contacto</label>
                           <input
                             type="number"
                             class="form-control"
                             id="validationCustom02"
-                            value="+258 84 000 0000"
+                            placeholder="+258 84 000 0000"
                             required
                           />
                           <div class="valid-feedback">Looks good!</div>
                         </div>
                         <div class="col-md-6">
-                          <label for="validationCustom04" class="form-label">Adress</label>
+                          <label for="validationCustom04" class="form-label">Morada</label>
                           <select class="form-select" id="validationCustom04" required>
-                            <option selected disabled value="">Choose&hellip;</option>
+                            <option selected disabled value="">Escolher&hellip;</option>
                             <option>Maputo</option>
-                            <option>Matola</option>
-                            <option>Beira</option>
+                            <option>Maputo-Provincia</option>
+                            <option>Gaza</option>
+                            <option>Inhambane</option>
+                            <option>Sofala</option>
+                            <option>Manica</option>
+                            <option>Tete</option>
+                            <option>Zambezia</option>
+                            <option>Nampula</option>
+                            <option>Niassa</option>
+                            <option>Cabo Delgado</option>
                           </select>
                           <div class="invalid-feedback">Please select a valid state.</div>
                         </div>
                         <div class="col-md-6">
-                          <label for="validationCustom05" class="form-label">photo</label>
+                          <label for="validationCustom05" class="form-label">Foto</label>
                           <input
                             type="file"
                             class="form-control"
@@ -136,42 +145,27 @@
                             type="email"
                             class="form-control"
                             id="validationCustom01"
-                            value="male@example.com"
+                            placeholder="Omar@example.com"
                             required
                           />
                           <div class="valid-feedback">Looks good!</div>
                         </div>
                         <div class="col-md-6">
-                          <label for="validationCustom02" class="form-label">password</label>
+                          <label for="validationCustom02" class="form-label">palavra-passe</label>
                           <input
                             type="password"
                             class="form-control"
                             id="validationCustom02"
-                            value="password123"
+                            placeholder="password123"
                             required
                           />
                           <div class="valid-feedback">Looks good!</div>
                         </div>
-
-                        <div class="col-12">
-                          <div class="form-check">
-                            <input
-                              class="form-check-input"
-                              type="checkbox"
-                              value=""
-                              id="invalidCheck"
-                              required
-                            />
-                            <label class="form-check-label" for="invalidCheck">
-                              Aceito os termos e condições
-                            </label>
-                            <div class="invalid-feedback">You must agree before submitting.</div>
-                          </div>
                         </div>
                       </div>
                     </div>
                     <div class="card-footer">
-                      <button class="btn btn-info" type="submit">Criar User</button>
+                      <button class="btn btn-info" type="submit">Criar Utilizador</button>
                     </div>
                   </form>
                 </div>
